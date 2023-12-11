@@ -1,0 +1,34 @@
+=============
+|   CSS     |
+=============
+
+<!-- 3 Formas de escribir codigo -->
+    # BEM - Bloques, Elementos, Modificadores
+        .card {} -> Bloque
+        .card__titulo {} -> Elemento
+        .card__imagen {}
+        .card__boton {}
+        .card__boton--activo -> Modificador
+
+    # Utility First - Clases por utilidad
+        .text-center {} utilidad de centrar texto
+        .color-red-100 {} colores
+        .bg-blue-200 {} backgrounds
+
+    # Modulos - Defines Clase Padre y luego hijos
+        .card {}
+        .card h2 {}
+        .card img {}
+        .card a {}
+
+<!-- Responsive Web Design --> 
+    # Media Queries
+        @media (min-width:768px) {}
+        @media (min-width:992px) {}
+
+    # Tamaños estandar
+        min-width: 480px -> Celular creo
+        min-width: 768px -> Tablets
+        min-width: 1140px -> Laptops
+        min-width: 1400px -> Monitor grande
+

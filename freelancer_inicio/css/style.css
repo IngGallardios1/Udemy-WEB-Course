@@ -1,0 +1,137 @@
+:root {
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --color-primario: #ffc107;
+    --color-secundario: #0097a7;
+    --color-gris: #757575;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    /*=16px/10px -> 1rem */
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, #DFE9F3 0%, var(--color-blanco) 100%);
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112, 112, 122, 0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112, 112, 122, 0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 122, 0.54);
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* Tipografia */
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--color-secundario);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.navbar a:hover {
+    background-color: var(--color-primario);
+    color: var(--color-negro);
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    position: absolute;
+    background-color: rgb(0 0 0 / 70%);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h2,
+.hero-content p {
+    color: var(--color-blanco);
+}
+
+.button {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 90%;
+        text-align: center;
+    }
+}
